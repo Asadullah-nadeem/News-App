@@ -1,20 +1,30 @@
 <?php
-    $username = "root";
-    $password = "";
-    $host = "localhost";
-    $dbname = "news";
+require 'vendor/autoload.php';
+use Dotenv\Dotenv;
 
-    $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
+// Load environment variables from .env
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
-    try {
-        $db = new PDO("mysql:host={$host};dbname={$dbname}", $username, $password);
-        // set the PDO error mode to exception
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch(PDOException $ex) {
-        die("Failed to connect to the database: " . $ex->getMessage());
-    }
+// Get the environment variables
+$host = $_ENV['DB_HOST'];
+$username = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASS'];
+$dbname = $_ENV['DB_NAME'];
 
-    // $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+$options = [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'];
 
-    header('Content-Type: application/json; charset=utf-8');
+try {
+    // Establish the PDO connection
+    $db = new PDO("mysql:host={$host};dbname={$dbname}", $username, $password, $options);
+
+    // Set the PDO error mode to exception
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $ex) {
+    die("Failed to connect to the database: " . $ex->getMessage());
+}
+
+// Set the content type for JSON responses
+header('Content-Type: application/json; charset=utf-8');
+
 ?>

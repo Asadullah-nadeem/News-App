@@ -1,5 +1,6 @@
 <?php
 
+global $db;
 require("config.php");
 
 if (!empty($_POST)) {
