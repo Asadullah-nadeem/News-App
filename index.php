@@ -31,11 +31,11 @@ echo "<script>alert('Invalid Details');</script>";
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="News Portal.">
-    <meta name="author" content="PHPGuru">
+    <meta name="description" content="Admin Panel.">
+    <meta name="author" content="Asadullah Nadeem">
 
     <!-- App title -->
-    <title>News Portal</title>
+    <title>Admin Panel</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -82,7 +82,9 @@ echo "<script>alert('Invalid Details');</script>";
 </section>
 
 <!-- END HOME -->
-
+<script>
+    var resizefunc = [];
+</script>
 <!-- jQuery -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
