@@ -1,0 +1,17 @@
+{
+    "name": "asadu/news-app",
+    "autoload": {
+        "psr-4": {
+            "Asadu\\NewsApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Asadullah-nadeem",
+            "email": "88024587+Asadullah-nadeem@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

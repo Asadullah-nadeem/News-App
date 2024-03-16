@@ -1,6 +1,6 @@
 /**
-* Theme: Zircos Dashboard
-* Author: Coderthemes
+* Theme:   Dashboard
+* Author: Asadullah Nadeem
 * Chartist chart
 */
 

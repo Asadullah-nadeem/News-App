@@ -1,6 +1,5 @@
 /**
-* Theme: Zircos Admin Template
-* Author: Coderthemes
+* Author: Asadullah Nadeem
 * Module/App: Main Js
 */
 
@@ -146,8 +145,8 @@ function($) {
 
     var App = function() {
         this.VERSION = "1.6.1",
-        this.AUTHOR = "Coderthemes",
-        this.SUPPORT = "coderthemes@gmail.com",
+        this.AUTHOR = "Asadullah_Nadeem",
+        this.SUPPORT = "asadullahnadeem48@gmail.com",
         this.pageScrollElement = "html, body",
         this.$body = $("body")
     };

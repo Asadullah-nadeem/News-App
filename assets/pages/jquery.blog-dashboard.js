@@ -1,7 +1,6 @@
 
 /**
-* Theme: Zircos Admin Template
-* Author: Coderthemes
+* Author: Asadullah Nadeem
 * Blog Dashboard
 */
 

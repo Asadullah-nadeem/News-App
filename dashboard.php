@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('includes/config.php');
+include('config.php');
 error_reporting(0);
 if (strlen($_SESSION['login']) == 0) {
     header('location:index.php');
@@ -12,8 +12,8 @@ if (strlen($_SESSION['login']) == 0) {
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
-        <meta name="author" content="Coderthemes">
+        <meta name="description" content="A fully featured admin panel.">
+        <meta name="author" content="Asadullah_Nadeem">
         <!-- App title -->
         <title>Dashboard</title>
         <link rel="stylesheet" href="../plugins/morris/morris.css">
@@ -27,8 +27,8 @@ if (strlen($_SESSION['login']) == 0) {
         <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
         <script src="assets/js/modernizr.min.js"></script>
-
     </head>
 
 
@@ -43,7 +43,6 @@ if (strlen($_SESSION['login']) == 0) {
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <a href="index.html" class="logo"><span>NP<span>Admin</span></span><i class="mdi mdi-layers"></i></a>
-      
                 </div>
 
                 <!-- Button mobile view to collapse sidebar menu -->
@@ -69,17 +68,7 @@ if (strlen($_SESSION['login']) == 0) {
                             <div class="col-xs-12">
                                 <div class="page-title-box">
                                     <h4 class="page-title">Dashboard</h4>
-                                    <ol class="breadcrumb p-0 m-0">
-                                        <li>
-                                            <a href="#">Admin</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Category</a>
-                                        </li>
-                                        <li class="active">
-                                            Dashboard
-                                        </li>
-                                    </ol>
+
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -90,7 +79,7 @@ if (strlen($_SESSION['login']) == 0) {
                             <a href="manage-categories.php">
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="card-box widget-box-one">
-                                        <i class="mdi mdi-chart-areaspline widget-one-icon"></i>
+                                        <i class="mdi mdi-chart-areaspline mdi-36px "></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
                                                 title="Statistics">Categories Listed</p>
@@ -110,7 +99,7 @@ if (strlen($_SESSION['login']) == 0) {
                             <a href="manage-subcategories.php">
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="card-box widget-box-one">
-                                        <i class="mdi mdi-layers widget-one-icon"></i>
+                                        <i class="mdi mdi-layers mdi-36px"></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
                                                 title="User This Month">Listed Subcategories</p>
@@ -129,7 +118,7 @@ if (strlen($_SESSION['login']) == 0) {
                             <a href="manage-posts.php">
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="card-box widget-box-one">
-                                        <i class="mdi mdi-access-point widget-one-icon"></i>
+                                        <i class="mdi mdi-newspaper mdi-36px"></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
                                                 title="User This Month">Live News</p>
@@ -144,8 +133,6 @@ if (strlen($_SESSION['login']) == 0) {
                                     </div>
                                 </div><!-- end col -->
                             </a>
-
-
                         </div>
                         <!-- end row -->
 
@@ -154,7 +141,7 @@ if (strlen($_SESSION['login']) == 0) {
                             <a href="trash-posts.php">
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="card-box widget-box-one">
-                                        <i class="mdi mdi-delete widget-one-icon"></i>
+                                        <i class="mdi mdi-delete mdi-36px"></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
                                                title="User This Month">Trash News</p>
@@ -169,13 +156,11 @@ if (strlen($_SESSION['login']) == 0) {
                                     </div>
                                 </div>
                             </a>
-
-
                             <!-- Add this code after the "Trash News" section -->
                             <a href="login_mobile.php">
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="card-box widget-box-one">
-                                        <i class="mdi mdi-account-multiple widget-one-icon"></i>
+                                        <i class="mdi mdi-account-multiple mdi-36px"></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
                                                title="User This Month">Mobile Login Details</p>

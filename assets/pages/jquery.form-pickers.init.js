@@ -1,6 +1,6 @@
 /**
- * Theme: Zircos Admin Template
- * Author: Coderthemes
+
+ * Author: Asadullah Nadeem
  * Form Pickers
  */
 jQuery(document).ready(function () {

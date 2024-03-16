@@ -1,8 +1,7 @@
 
 /**
-* Theme: Zircos Admin Template
-* Author: Coderthemes
- * Email: coderthemes@gmail.com
+* Author: Asadullah Nadeem
+ * Email: asadullahnadeem48@gmail.com
 * File Uploads
 */
 

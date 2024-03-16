@@ -1,5 +1,5 @@
 <?php 
-require_once("includes/config.php");
+require_once("config.php");
 // code   username availablity
 if(!empty($_POST["username"])) {
 	$uname= $_POST["username"];

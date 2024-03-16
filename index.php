@@ -2,7 +2,7 @@
 global $con;
 session_start();
 //Database Configuration File
-include('includes/config.php');
+include('config.php');
 //error_reporting(0);
 if(isset($_POST['login']))
   {

@@ -1,7 +1,6 @@
 /*
-Template Name: Zircos Dashboard
-Author: CoderThemes
-Email: coderthemes@gmail.com
+Author: Asadullah Nadeem
+Email: asadullahnadeem48@gmail.com
 File: Responsive
 */
 @media only screen and (max-width: 6000px) and (min-width: 700px) {
@@ -34,7 +33,7 @@ File: Responsive
     margin-left: -75px;
   }
   .topbar-left {
-    width: 70px !important;
+    width: 225px !important;
   }
   .topbar-left span {
     display: none !important;

@@ -1,6 +1,6 @@
 /**
- * Theme: Zircos Admin Template
- * Author: Coderthemes
+
+ * Author: Asadullah Nadeem
  * Module/App: Flot-Chart
  */
 

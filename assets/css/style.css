@@ -1,0 +1,18 @@
+/* Add custom styles for the widget boxes */
+.widget-box-one {
+    background-color: #f5f5f5; /* Set background color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Add hover effect */
+.widget-box-one:hover {
+    transform: translateY(-5px); /* Move the widget up on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Add color to widget content */
+.wigdet-one-content {
+    color: #333; /* Set content color */
+}

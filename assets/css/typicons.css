@@ -1,15 +1,15 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 /* @FONT-FACE loads font into browser */
 @font-face {
-  font-family: 'typicons';
+  font-family: 'NovaSquare';
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/typicons.eot');
-  src: url('../fonts/typicons.eot?#iefix') format('embedded-opentype'), url('../fonts/typicons.woff') format('woff'), url('../fonts/typicons.ttf') format('truetype'), url('../fonts/typicons.svg#typicons') format('svg');
+  src: url('../fonts/NovaSquare-Regular.ttf');
+  src: url('../fonts/NovaSquare-Regular.ttf?#iefix') format('embedded-opentype'), url('../fonts/NovaSquare-Regular.ttf') format('woff'), url('../fonts/NovaSquare-Regular.ttf') format('truetype'), url('../fonts/NovaSquare-Regular.ttf#typicons') format('svg');
 }
 /* :before psuedo-selector inserts and styles icon */
 .typcn:before {
-  font-family: 'typicons';
+  font-family: 'NovaSquare';
   font-style: normal;
   font-weight: normal;
   speak: none;

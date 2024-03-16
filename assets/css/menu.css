@@ -1,7 +1,6 @@
 /*
-Template Name: Zircos Dashboard
-Author: CoderThemes
-Email: coderthemes@gmail.com
+Author: Asadullah Nadeem
+Email: asadullahnadeem48@gmail.com
 File: Menu
 */
 .topbar {
@@ -12,7 +11,7 @@ File: Menu
   z-index: 999;
 }
 .topbar .topbar-left {
-  background: #36404e;
+  background: #070707;
   float: left;
   text-align: center;
   height: 70px;
@@ -21,7 +20,7 @@ File: Menu
   z-index: 1;
 }
 .navbar-default {
-  background-color: #f3f3f3;
+  background-color: #f5f3f3;
   border-radius: 0;
   border: none;
   margin-bottom: 0;
@@ -32,7 +31,7 @@ File: Menu
   line-height: 68px;
 }
 .logo {
-  color: #ffffff !important;
+  color: #fcfdfd !important;
   font-size: 24px;
   text-transform: uppercase;
   font-family: 'Hind Madurai', sans-serif;
@@ -44,7 +43,7 @@ File: Menu
   display: none;
 }
 .logo span span {
-  color: #7fc1fc;
+  color: #fcfdfd;
 }
 .user-box a.user-link {
   padding-top: 17px !important;
@@ -61,7 +60,7 @@ File: Menu
   width: 36px;
   padding: 0;
   font-size: 18px;
-  border: 2px solid #ccc !important;
+  border: 2px solid #fcfdfd !important;
   line-height: 35px;
   text-align: center;
   border-radius: 50%;
@@ -88,7 +87,7 @@ File: Menu
   width: 225px;
   padding-top: 10px;
   z-index: 10;
-  background: #36404e;
+  background: #000000;
   bottom: 50px;
   margin-top: 0;
   padding-bottom: 70px;

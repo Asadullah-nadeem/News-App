@@ -1,7 +1,7 @@
 <?php
 global $con;
 session_start();
-include('includes/config.php');
+include('config.php');
 
 // Check if the user is logged in
 if (strlen($_SESSION['login']) == 0) {
@@ -44,17 +44,6 @@ if (strlen($_SESSION['login']) == 0) {
                     <div class="col-xs-12">
                         <div class="page-title-box">
                             <h4 class="page-title">Mobile Login</h4>
-                            <ol class="breadcrumb p-0 m-0">
-                                <li>
-                                    <a href="#">Admin</a>
-                                </li>
-                                <li>
-                                    <a href="#">Category</a>
-                                </li>
-                                <li class="active">
-                                    Mobile Login
-                                </li>
-                            </ol>
                             <div class="clearfix"></div>
                         </div>
                     </div>
@@ -83,8 +72,8 @@ if (strlen($_SESSION['login']) == 0) {
                         <table class="table m-0 table-colored-bordered table-bordered-primary">
                             <thead>
                             <tr>
-                                <th>#</th>
-                                <th>unique_id</th>
+                                <th>No.</th>
+                                <th>Unique Id</th>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Password</th>
@@ -110,7 +99,9 @@ if (strlen($_SESSION['login']) == 0) {
                                     <td><?php echo htmlentities($row['verified']); ?></td>
                                     <td><?php echo htmlentities($row['created_at']); ?></td>
                                     <td>
-                                        <a href="delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')" class="btn btn-danger btn-sm">Delete</a>
+                                        <a href="delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')" >
+                                            <i class="fa fa-trash"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <?php
