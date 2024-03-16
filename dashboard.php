@@ -82,7 +82,7 @@ if (strlen($_SESSION['login']) == 0) {
                                         <i class="mdi mdi-chart-areaspline mdi-36px "></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
-                                                title="Statistics">Categories Listed</p>
+                                                title="Statistics">Categories</p>
                                             <?php $query = mysqli_query($con, "select * from tblcategory where Is_Active=1");
                                             $countcat = mysqli_num_rows($query);
                                             ?>
@@ -102,7 +102,7 @@ if (strlen($_SESSION['login']) == 0) {
                                         <i class="mdi mdi-layers mdi-36px"></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
-                                                title="User This Month">Listed Subcategories</p>
+                                                title="User This Month">Sub Categories</p>
                                             <?php $query = mysqli_query($con, "select * from tblsubcategory where Is_Active=1");
                                             $countsubcat = mysqli_num_rows($query);
                                             ?>
@@ -121,7 +121,7 @@ if (strlen($_SESSION['login']) == 0) {
                                         <i class="mdi mdi-newspaper mdi-36px"></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
-                                                title="User This Month">Live News</p>
+                                                title="User This Month">Live Blog</p>
                                             <?php $query = mysqli_query($con, "select * from tblposts where Is_Active=1");
                                             $countposts = mysqli_num_rows($query);
                                             ?>
@@ -144,7 +144,7 @@ if (strlen($_SESSION['login']) == 0) {
                                         <i class="mdi mdi-delete mdi-36px"></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
-                                               title="User This Month">Trash News</p>
+                                               title="User This Month">Trash</p>
                                             <?php $query = mysqli_query($con, "select * from tblposts where Is_Active=0");
                                             $countposts = mysqli_num_rows($query);
                                             ?>
@@ -163,7 +163,7 @@ if (strlen($_SESSION['login']) == 0) {
                                         <i class="mdi mdi-account-multiple mdi-36px"></i>
                                         <div class="wigdet-one-content">
                                             <p class="m-0 text-uppercase font-600 font-secondary text-overflow"
-                                               title="User This Month">Mobile Login Details</p>
+                                               title="User This Month">Mobile User</p>
                                             <?php $query = mysqli_query($con, "select * from users");
                                             $countposts = mysqli_num_rows($query);
                                             ?>
